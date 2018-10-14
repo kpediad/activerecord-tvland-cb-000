@@ -1,6 +1,6 @@
 class Network < ActiveRecord::Base
   has_many :shows
-  has_many :actors through: :shows, :characters
+  #has_many :actors through: :shows, :characters
   has_many :characters through: :shows
 
   def sorry
